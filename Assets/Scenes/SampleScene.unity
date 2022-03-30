@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 866860417}
   - component: {fileID: 866860416}
   m_Layer: 0
-  m_Name: Environment
+  m_Name: House
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1176,7 +1176,7 @@ GameObject:
   - component: {fileID: 2033320408}
   - component: {fileID: 2033320412}
   m_Layer: 0
-  m_Name: Outsider
+  m_Name: Thief
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1296,7 +1296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 633272be7dc88c14f9109a01c02acf5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _environment: {fileID: 866860416}
+  _house: {fileID: 866860416}
   _targetPoint: {fileID: 251737301}
   _escapePoint: {fileID: 890963744}
   _walkSpeed: 1

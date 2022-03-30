@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Thief : MonoBehaviour
 {
-    [SerializeField] private Environment _environment;
+    [SerializeField] private House _house;
     [SerializeField] private Point _targetPoint;
     [SerializeField] private Point _escapePoint;
     [SerializeField] private float _walkSpeed = 1;
@@ -20,7 +20,7 @@ public class Thief : MonoBehaviour
 
     private void Update()
     {
-        if (_environment.AlarmVolume >= _alarmVolumeToEscape)
+        if (_house.AlarmVolume >= _alarmVolumeToEscape)
         {
             _targetPosition = _escapePoint.transform.position;
             _moveSpeed = _runSpeed;
