@@ -10,12 +10,10 @@ public class Thief : MonoBehaviour
     [SerializeField, Range(0.1f, 0.9f)] private float _alarmVolumeToEscape = 0.5f;
 
     private Vector3 _targetPosition;
-    private Transform _transform;
     private float _moveSpeed;
 
     private void Start()
     {
-        _transform = gameObject.transform;
         _targetPosition = _targetPoint.transform.position;
         _moveSpeed = _walkSpeed;
     }
@@ -27,9 +25,9 @@ public class Thief : MonoBehaviour
             _targetPosition = _escapePoint.transform.position;
             _moveSpeed = _runSpeed;
         }
-
-        Vector3 newPosition = _transform.position;
+        
+        Vector3 newPosition = transform.position;
         newPosition.x = Mathf.MoveTowards(newPosition.x, _targetPosition.x, _moveSpeed * Time.deltaTime);
-        _transform.position = newPosition;
+        transform.position = newPosition;
     }
 }
