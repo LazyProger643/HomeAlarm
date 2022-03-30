@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Outsider : MonoBehaviour
+public class Thief : MonoBehaviour
 {
     [SerializeField] private Environment _environment;
     [SerializeField] private Point _targetPoint;
